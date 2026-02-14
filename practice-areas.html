@@ -16,14 +16,6 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000 /* Animation duration in milliseconds (1s) */,
-        once: true /* Whether animation should happen only once while scrolling down */,
-      });
-    </script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
       rel="stylesheet"
@@ -79,7 +71,11 @@
         </div>
       </div>
     </section>
-    <section style="background-color: #ffffff; padding: 10rem 0 5rem 0">
+    <section
+      style="background-color: #ffffff; padding: 10rem 0 5rem 0"
+      data-aos-offset="350"
+      data-aos="fade-up"
+    >
       <div class="section-container">
         <div class="practice-intro">
           <h2>Strategic Legal Disciplines</h2>
@@ -95,7 +91,7 @@
     <section style="background-color: #f8f9fa; padding: 10rem 0">
       <div class="section-container">
         <div class="detailed-grid">
-          <div class="detailed-card">
+          <div class="detailed-card" data-aos="fade-up-right">
             <div class="card-header-flex">
               <div class="icon-box">
                 <svg
@@ -153,7 +149,7 @@
             </div>
           </div>
 
-          <div class="detailed-card">
+          <div class="detailed-card" data-aos="fade-up-left">
             <div class="card-header-flex">
               <div class="icon-box">
                 <svg
@@ -211,7 +207,7 @@
             </div>
           </div>
 
-          <div class="detailed-card">
+          <div class="detailed-card" data-aos="fade-up-right">
             <div class="card-header-flex">
               <div class="icon-box">
                 <svg
@@ -272,7 +268,7 @@
             </div>
           </div>
 
-          <div class="detailed-card">
+          <div class="detailed-card" data-aos="fade-up-left">
             <div class="card-header-flex">
               <div class="icon-box">
                 <svg
@@ -329,7 +325,7 @@
             </div>
           </div>
 
-          <div class="detailed-card">
+          <div class="detailed-card" data-aos="fade-up-right">
             <div class="card-header-flex">
               <div class="icon-box">
                 <svg
@@ -575,6 +571,16 @@
         const nav = document.querySelector("nav");
         nav.classList.toggle("active");
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        disable: false, // 👈 Explicitly make sure this is false
+        startEvent: "DOMContentLoaded", // Ensures it triggers once the page loads
+      });
     </script>
   </body>
 </html>

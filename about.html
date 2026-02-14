@@ -16,14 +16,6 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000 /* Animation duration in milliseconds (1s) */,
-        once: true /* Whether animation should happen only once while scrolling down */,
-      });
-    </script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
       rel="stylesheet"
@@ -79,7 +71,11 @@
     <section class="vision-mission-section">
       <div class="section-container">
         <div class="vision-mission-wrapper">
-          <div class="vm-box vm-light">
+          <div
+            class="vm-box vm-light"
+            data-aos-offset="250"
+            data-aos="fade-up-right"
+          >
             <div class="vm-header-block">
               <span class="vm-subtitle">Our Vision</span>
               <h3 class="vm-title">
@@ -97,7 +93,11 @@
             </div>
           </div>
 
-          <div class="vm-box vm-dark">
+          <div
+            class="vm-box vm-dark"
+            data-aos-offset="250"
+            data-aos="fade-up-left"
+          >
             <div class="vm-header-block">
               <span class="vm-subtitle">Our Mission</span>
               <h3 class="vm-title">
@@ -121,12 +121,14 @@
     <section class="values-section">
       <div class="section-container">
         <div class="values-header">
-          <h2>Our Core Values</h2>
-          <p>The principles that guide every decision we make.</p>
+          <h2 data-aos="fade-down">Our Core Values</h2>
+          <p data-aos="fade-up">
+            The principles that guide every decision we make.
+          </p>
         </div>
 
         <div class="values-grid">
-          <div class="value-card">
+          <div class="value-card" data-aos="flip-left">
             <h3>Integrity First</h3>
             <p class="vm-text">
               Trust is our currency. We adhere to the highest ethical standards,
@@ -134,7 +136,7 @@
             </p>
           </div>
 
-          <div class="value-card">
+          <div class="value-card" data-aos="flip-right">
             <h3>Client-Centricity</h3>
             <p class="vm-text">
               Your success is our success. We tailor every strategy to your
@@ -142,7 +144,7 @@
             </p>
           </div>
 
-          <div class="value-card">
+          <div class="value-card" data-aos="flip-left">
             <h3>Excellence</h3>
             <p class="vm-text">
               Good enough is not enough. We relentlessly pursue the best
@@ -150,7 +152,7 @@
             </p>
           </div>
 
-          <div class="value-card">
+          <div class="value-card" data-aos="flip-right">
             <h3>Partnership</h3>
             <p class="vm-text">
               We work <em>with</em> you, not just for you. We act as an
@@ -164,7 +166,11 @@
     <section class="founder-section">
       <div class="section-container">
         <div class="founder-wrapper">
-          <div class="founder-image-box">
+          <div
+            class="founder-image-box"
+            data-aos-offset="100"
+            data-aos="fade-left"
+          >
             <div class="founder-img-container">
               <img
                 src="images/omar.png"
@@ -179,7 +185,11 @@
             </div>
           </div>
 
-          <div class="founder-text-box">
+          <div
+            class="founder-text-box"
+            data-aos-offset="100"
+            data-aos="fade-right"
+          >
             <span class="vm-subtitle" style="color: var(--primary-color)"
               >Leadership</span
             >
@@ -425,6 +435,16 @@
         const nav = document.querySelector("nav");
         nav.classList.toggle("active");
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        disable: false, // 👈 Explicitly make sure this is false
+        startEvent: "DOMContentLoaded", // Ensures it triggers once the page loads
+      });
     </script>
   </body>
 </html>

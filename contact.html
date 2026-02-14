@@ -16,14 +16,6 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000 /* Animation duration in milliseconds (1s) */,
-        once: true /* Whether animation should happen only once while scrolling down */,
-      });
-    </script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
       rel="stylesheet"
@@ -80,7 +72,11 @@
     <section class="contact-page-section">
       <div class="section-container">
         <div class="contact-split-wrapper">
-          <div class="contact-form-card">
+          <div
+            class="contact-form-card"
+            data-aos-offset="200"
+            data-aos="zoom-in-down"
+          >
             <h2>Request a Consultation</h2>
             <form
               action="https://formspree.io/f/xreapnpp"
@@ -137,7 +133,11 @@
             </form>
           </div>
 
-          <div class="contact-info-card">
+          <div
+            class="contact-info-card"
+            data-aos-offset="200"
+            data-aos="zoom-in-down"
+          >
             <div class="info-content-top">
               <h2>Get In Touch</h2>
 
@@ -421,6 +421,16 @@
           btn.innerHTML = originalText;
           btn.style.opacity = "1";
         }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        disable: false, // 👈 Explicitly make sure this is false
+        startEvent: "DOMContentLoaded", // Ensures it triggers once the page loads
       });
     </script>
   </body>

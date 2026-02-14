@@ -15,19 +15,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000 /* Animation duration in milliseconds (1s) */,
-        once: true /* Whether animation should happen only once while scrolling down */,
-      });
-    </script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -78,7 +70,7 @@
           </p>
 
           <div class="hero-btns">
-            <a href="practice-areas.html" class="btn-primary"
+            <a href="practice-areas.html" class="btn-primary hvr-glow"
               >Our Practice Areas</a
             >
             <a href="contact.html" class="btn-secondary">Get in Touch</a>
@@ -87,7 +79,7 @@
       </div>
     </section>
 
-    <section class="services-section">
+    <section class="services-section" data-aos-offset="150" data-aos="fade-up">
       <div class="section-container">
         <div class="services-header">
           <h2>Our Practice Areas</h2>
@@ -101,7 +93,7 @@
         </div>
 
         <div class="services-grid">
-          <div class="service-card">
+          <div class="service-card hvr-shadow" data-aos="fade-right">
             <div class="icon-box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +133,7 @@
             </div>
           </div>
 
-          <div class="service-card">
+          <div class="service-card hvr-shadow" data-aos="fade-up">
             <div class="icon-box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +174,7 @@
             </div>
           </div>
 
-          <div class="service-card">
+          <div class="service-card hvr-shadow" data-aos="fade-left">
             <div class="icon-box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +216,7 @@
             </div>
           </div>
 
-          <div class="service-card">
+          <div class="service-card hvr-shadow" data-aos="fade-right">
             <div class="icon-box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +247,7 @@
             </div>
           </div>
 
-          <div class="service-card">
+          <div class="service-card hvr-shadow" data-aos="fade-left">
             <div class="icon-box">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +289,11 @@
     <section class="trust-section">
       <div class="section-container">
         <div class="trust-wrapper">
-          <div class="trust-text-box">
+          <div
+            class="trust-text-box"
+            data-aos-offset="100"
+            data-aos="fade-left"
+          >
             <span class="trust-subtitle">Why Choose Us</span>
             <h2 class="trust-title">
               Built on Trust, Integrity, <br />and Dedication.
@@ -363,7 +359,11 @@
             <a href="about.html" class="btn-trust">More About Us &rarr;</a>
           </div>
 
-          <div class="trust-image-box">
+          <div
+            class="trust-image-box"
+            data-aos-offset="100"
+            data-aos="fade-right"
+          >
             <div class="trust-image-container">
               <img
                 src="images/trust.jpg"
@@ -564,6 +564,16 @@
         const nav = document.querySelector("nav");
         nav.classList.toggle("active");
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true, // whether animation should happen only once - while scrolling down
+        disable: false, // 👈 Explicitly make sure this is false
+        startEvent: "DOMContentLoaded", // Ensures it triggers once the page loads
+      });
     </script>
   </body>
 </html>
