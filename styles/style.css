@@ -611,7 +611,13 @@ nav a.active {
   text-align: left;
   width: 100%;
 }
-
+.hero-practice {
+  background-image:
+    linear-gradient(to right, rgba(14, 88, 83, 0.9), rgba(14, 88, 83, 0.4)),
+    url("../images/practice.jpg");
+  background-size: cover;
+  background-position: center;
+}
 /* =========================================
    6. ABOUT PAGE (VISION, VALUES, FOUNDER)
    ========================================= */
@@ -847,7 +853,14 @@ nav a.active {
   margin-top: 0.8rem;
   flex-shrink: 0;
 }
-
+.hero-about {
+  background-image:
+    linear-gradient(to right, rgba(14, 88, 83, 0.9), rgba(14, 88, 83, 0.4)),
+    url("../images/about.jpg");
+  /* Ensure the image covers the area properly */
+  background-size: cover;
+  background-position: center;
+}
 /* =========================================
    7. CONTACT PAGE & FORMS
    ========================================= */
@@ -1047,7 +1060,13 @@ form .btn-primary {
   background-color: var(--primary-color);
   border-radius: 50%;
 }
-
+.hero-contact {
+  background-image:
+    linear-gradient(to right, rgba(14, 88, 83, 0.9), rgba(14, 88, 83, 0.4)),
+    url("../images/contact.jpg");
+  background-size: cover;
+  background-position: center;
+}
 /* =========================================
    8. FOOTER
    ========================================= */
@@ -1422,6 +1441,16 @@ form .btn-primary {
     display: inline-flex;
     margin-right: 2rem;
     width: auto;
+  }
+  .hero-section,
+  .internal-hero {
+    min-height: 50vh !important; /* Forces all to be exactly half screen height */
+    padding: 6rem 0 !important; /* Ensures text position is identical */
+    display: flex;
+    align-items: center;
+  }
+  .hero-content h1 {
+    font-size: 3.2rem;
   }
 }
 /* =========================================
