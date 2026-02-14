@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Business Law Solutions</title>
+    <meta
+      name="description"
+      content="Contact Business Law Solutions today. Schedule a consultation with our legal experts in Dubai or Amman for corporate, real estate, and employment law inquiries."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000 /* Animation duration in milliseconds (1s) */,
+        once: true /* Whether animation should happen only once while scrolling down */,
+      });
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-wrapper">
+          <div class="left-side-header">
+            <a href="index.html">
+              <img
+                src="images/Logo.png"
+                alt="Business Law Solutions Logo"
+                class="header-logo"
+              />
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practice-areas.html">Practice Areas</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="actions-group">
+            <a href="contact.html" class="btn-cta">Make An Appointment</a>
+            <div class="phone-info">Call Us: <span>+971 58 581 6044</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section internal-hero contact-hero">
+      <div class="section-container">
+        <div class="hero-content">
+          <h1>Contact Us</h1>
+          <p>
+            Strategic legal counsel is just a conversation away. Reach out to
+            our specialists in the UAE and Jordan to discuss your business
+            needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page-section">
+      <div class="section-container">
+        <div class="contact-split-wrapper">
+          <div class="contact-form-card">
+            <h2>Request a Consultation</h2>
+            <form
+              action="https://formspree.io/f/xreapnpp"
+              method="POST"
+              class="contact-page-form"
+            >
+              <div class="form-input-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="form-input-row">
+                <input type="tel" name="phone" placeholder="Phone Number" />
+
+                <select name="service" required>
+                  <option value="" disabled selected>
+                    Select Practice Area
+                  </option>
+                  <option value="corporate">
+                    Corporate & Business Contracts
+                  </option>
+                  <option value="conflict">
+                    Conflict Resolution & Employment
+                  </option>
+                  <option value="realestate">Real Estate & Finance</option>
+                  <option value="risk">Risk, Audit & Tax</option>
+                  <option value="strategy">
+                    Strategy & Intellectual Property
+                  </option>
+                </select>
+              </div>
+
+              <textarea
+                name="message"
+                placeholder="How can we help you?"
+                rows="6"
+                required
+              ></textarea>
+
+              <button type="submit" class="btn-primary">
+                Send Message &rarr;
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="info-content-top">
+              <h2>Get In Touch</h2>
+
+              <div class="info-person-block">
+                <span class="info-label">Founder & Lawyer</span>
+                <h3>Omar Al Khashashneh</h3>
+                <p><strong>UAE:</strong> +971 58 581 6044</p>
+                <p><strong>JO:</strong> +962 79 300 3058</p>
+                <p><strong>Email:</strong> ceo@businesslawsolutions.com</p>
+              </div>
+
+              <hr class="info-divider" />
+
+              <div class="info-person-block">
+                <span class="info-label">Paralegal Consultant</span>
+                <h3>Abeer Al Afeef</h3>
+                <p><strong>UAE:</strong> +971 54 562 3309</p>
+                <p><strong>Email:</strong> info@businesslawsolutions.com</p>
+              </div>
+            </div>
+
+            <div class="info-content-bottom">
+              <p>
+                Available 24/7 for urgent legal matters.<br />Office Location:
+                UAE
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-col-brand">
+            <img
+              src="images/Logo.png"
+              alt="Business Law Solutions"
+              class="footer-brand-logo"
+            />
+            <p class="footer-brand-desc">
+              Trusted legal expertise and practical solutions. We protect your
+              interests and empower your business growth.
+            </p>
+            <span class="footer-social-title">Follow Us</span>
+            <div class="footer-social-icons">
+              <a href="#" class="social-icon-link" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon-link" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col-links">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="index.html" class="footer-link">Home</a>
+              </li>
+              <li class="footer-item">
+                <a href="about.html" class="footer-link">About Us</a>
+              </li>
+              <li class="footer-item">
+                <a href="practice-areas.html" class="footer-link"
+                  >Our Services</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="contact.html" class="footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col-links">
+            <h4 class="footer-heading">Our Services</h4>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="practice-areas.html" class="footer-link"
+                  >Corporate Law</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="practice-areas.html" class="footer-link"
+                  >Real Estate & Finance</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="practice-areas.html" class="footer-link"
+                  >Conflict Resolution</a
+                >
+              </li>
+              <li class="footer-item">
+                <a href="practice-areas.html" class="footer-link"
+                  >Tax & Audit</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col-links">
+            <h4 class="footer-heading">Get In Touch</h4>
+            <ul class="footer-list">
+              <li class="contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a
+                  href="mailto:info@businesslawsolutions.com"
+                  class="footer-link"
+                  >info@businesslawsolutions.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>+971 58 581 6044</span>
+              </li>
+              <li class="contact-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="contact-icon"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>street<br />uae</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright-text">
+            &copy; 2026 Business Law Solutions. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div id="success-modal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <h3>Submission Successful!</h3>
+        <p>
+          Your consultation request has been sent and will be reviewed shortly.
+          You will hear from our team soon.
+        </p>
+        <button onclick="closeModal()" class="btn-primary">Close</button>
+      </div>
+    </div>
+    <script>
+      // Menu Toggle Script
+      function toggleMenu() {
+        const nav = document.querySelector("nav");
+        nav.classList.toggle("active");
+      }
+
+      // --- FORM HANDLING SCRIPT ---
+      const form = document.querySelector(".contact-page-form");
+      const modal = document.getElementById("success-modal");
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      // Close modal if clicking outside the box
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault(); // Stop the page from reloading or leaving
+
+        const data = new FormData(event.target);
+        const btn = form.querySelector("button");
+        const originalText = btn.innerHTML;
+
+        // Show loading state on button
+        btn.innerHTML = "Sending...";
+        btn.style.opacity = "0.7";
+
+        try {
+          const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              Accept: "application/json", // Tells Formspree to reply with JSON, not a redirect
+            },
+          });
+
+          if (response.ok) {
+            // Success! Show modal and clear form
+            form.reset();
+            modal.style.display = "flex";
+          } else {
+            // Formspree error
+            alert(
+              "Oops! There was a problem sending your form. Please try again.",
+            );
+          }
+        } catch (error) {
+          // Network error
+          alert("Oops! There was a problem connecting to the server.");
+        } finally {
+          // Reset button
+          btn.innerHTML = originalText;
+          btn.style.opacity = "1";
+        }
+      });
+    </script>
+  </body>
+</html>
