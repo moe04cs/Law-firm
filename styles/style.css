@@ -1403,6 +1403,26 @@ form .btn-primary {
   .footer-bottom {
     text-align: left;
   }
+  .form-radio-group {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start; /* Aligns them to the left */
+    gap: 1rem; /* Reduces the space between items */
+    padding: 1.5rem;
+  }
+
+  .form-radio-group span {
+    min-width: auto; /* Removes the fixed width so it doesn't push */
+    width: 100%; /* Makes the label take the full top row */
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem; /* Slightly smaller text if needed */
+  }
+
+  /* Make the buttons sit side-by-side below the label */
+  .form-radio-group .radio-label {
+    display: inline-flex;
+    margin-right: 2rem;
+    width: auto;
+  }
 }
 /* =========================================
    11. SUCCESS MODAL
