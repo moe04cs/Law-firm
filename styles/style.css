@@ -465,7 +465,9 @@ nav a.active {
   font-weight: 600;
 }
 .trust-badge-text {
-  font-size: 2.4rem;
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-size: 2rem;
   color: var(--primary-color);
 }
 
@@ -747,112 +749,132 @@ nav a.active {
   margin-bottom: 1.5rem;
   color: var(--primary-color);
 }
-
-/* Founder Section */
-.founder-section {
+/* =========================================
+   NEW EXECUTIVE / LEADERSHIP SECTION
+   ========================================= */
+.executive-section {
   background-color: var(--bg-light);
   padding: 10rem 0;
-  overflow: visible;
+  overflow: hidden; /* <--- THIS IS REQUIRED TO FIX THE GAP */
+  width: 100%;
 }
-.founder-wrapper {
+
+.executive-wrapper {
   display: flex;
-  align-items: center;
-  gap: 8rem;
   flex-wrap: wrap;
+  gap: 6rem;
+  align-items: center;
+  justify-content: space-between;
 }
-.founder-image-box {
+
+/* Left Column: Philosophy */
+.executive-text-col {
+  flex: 1.5;
+  min-width: 32rem;
+}
+
+.exec-subtitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.exec-quote {
+  font-family: "Baskervville", serif;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.exec-desc {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+/* Right Column: Badge Card */
+.executive-card-col {
   flex: 1;
   min-width: 30rem;
-  max-width: 44rem;
-  position: relative;
-  margin: 0 auto;
-}
-.founder-img-container {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 3px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  line-height: 0;
-}
-.founder-img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
-.founder-badge {
-  position: absolute;
-  bottom: -3rem;
-  right: -7rem;
-  background-color: var(--white);
-  padding: 3rem 3.5rem;
-  color: var(--primary-color);
+.executive-card {
+  background-color: #ffffff;
+  padding: 5rem 4rem;
   border-radius: 3px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid var(--primary-color);
+  width: 100%;
+  max-width: 40rem;
   text-align: left;
-  z-index: 10;
+  transition: transform 0.3s ease;
 }
-.founder-badge-title {
+
+.executive-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-label {
   display: block;
-  font-family: "Baskervville", serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-.founder-badge-role {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  color: #999;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #555;
-  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.founder-text-box {
-  flex: 1;
-  min-width: 30rem;
-  max-width: 60rem;
-  text-align: left;
+.exec-name {
+  font-family: "Baskervville", serif;
+  font-size: 3.2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
 }
-.founder-text-box h2 {
-  font-size: 3.6rem;
+
+.exec-role {
+  font-size: 1.6rem;
   color: var(--text-dark);
+  font-weight: 700;
   margin-bottom: 2.5rem;
-  line-height: 1.2;
 }
 
-/* Resume List Style */
-.founder-list {
-  list-style: none;
-  border: 1px solid var(--border-color);
-  padding: 3rem;
-  background-color: var(--white);
-  border-radius: 3px;
-  border-left: 5px solid var(--primary-color);
-  margin-top: 2rem;
+.exec-divider {
+  height: 1px;
+  width: 5rem;
+  background-color: #ddd;
+  margin-bottom: 2.5rem;
 }
-.founder-list li {
+
+.exec-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--text-light);
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.3s;
+  font-weight: 500;
 }
-.founder-dot {
-  min-width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  margin-top: 0.8rem;
-  flex-shrink: 0;
+
+.exec-link:hover {
+  color: var(--primary-color);
 }
+
+.arrow-icon {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
 .hero-about {
   background-image:
     linear-gradient(to right, rgba(14, 88, 83, 0.9), rgba(14, 88, 83, 0.4)),
@@ -1451,6 +1473,42 @@ form .btn-primary {
   }
   .hero-content h1 {
     font-size: 3.2rem;
+  }
+  /* =========================================
+     MOBILE FIX FOR EXECUTIVE SECTION
+     ========================================= */
+  .executive-section {
+    padding: 6rem 0; /* Reduced from 10rem to fit screen better */
+  }
+
+  .executive-wrapper {
+    flex-direction: column; /* Stack them vertically */
+    gap: 4rem; /* Reduce gap between text and card */
+  }
+
+  .executive-text-col,
+  .executive-card-col {
+    width: 100%;
+    min-width: 0; /* Allows it to shrink below the desktop limit */
+    flex: 1 1 auto;
+  }
+
+  .exec-quote {
+    font-size: 3rem; /* Smaller font so it doesn't take up the whole screen */
+    margin-bottom: 2rem;
+  }
+
+  .exec-desc {
+    font-size: 1.6rem;
+  }
+
+  .executive-card {
+    padding: 3rem; /* Smaller padding inside the white card */
+    max-width: 100%; /* Ensure it doesn't overflow */
+  }
+
+  .exec-name {
+    font-size: 2.8rem;
   }
 }
 /* =========================================
