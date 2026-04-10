@@ -323,6 +323,7 @@ nav a.active {
   list-style: none;
   padding: 0;
   margin-bottom: 2.5rem;
+  flex-grow: 1;
 }
 .service-list li {
   margin-bottom: 1.2rem;
@@ -334,7 +335,7 @@ nav a.active {
 }
 .card-btn-container {
   text-align: center;
-  margin-top: auto;
+  margin-top: auto !important;
 }
 
 .btn-details {
